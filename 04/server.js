@@ -20,7 +20,7 @@ class Contenedor {
       this.nextId = this.#getNextId();
     } else {
       console.log("No existe archivo de productos, creandolo...");
-      this.nextId = 0;
+      this.nextId = 1;
       fs.writeFileSync(this.nombreArchivo, JSON.stringify(this.arrayObj));
     }
   }
