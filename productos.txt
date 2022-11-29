@@ -1,1 +1,0 @@
-[{"title":"cortadora","price":"200","thumbnail":"123132","id":0},{"title":"cortadora1","price":"200","thumbnail":"123132","id":1},{"title":"cortadora1","price":"2000","thumbnail":"123132","id":2}]

@@ -1,0 +1,1 @@
+[{"title":"Cortadora","price":"2000","thumbnail":"asdas.png","id":0},{"title":"Cortadora","price":"20000","thumbnail":"asdas.png","id":1},{"title":"Balanza","price":"50000","thumbnail":"asdas.png","id":2},{"title":"tv","price":"150000","thumbnail":"asdas.png","id":3}]
