@@ -12,7 +12,7 @@ class Contenedor {
             this.nextId = this.#getNextId();
             console.log("existe");
         } else {
-            this.nextId = 0;
+            this.nextId = 1;
             fs.writeFileSync(this.nombreArchivo, JSON.stringify(this.arrayObj));
             console.log("No existe");
         }
@@ -25,7 +25,7 @@ class Contenedor {
                 this.nextId++;
                 this.arrayObj.push(object);
                 await fs.promises.writeFile(this.nombreArchivo, JSON.stringify(this.arrayObj));
-                console.log("se guardo" + object.id);
+                console.log("Se guardó " + object.id);
                 return Promise.resolve(object.id);
             }
             else
@@ -117,7 +117,7 @@ class Contenedor {
     }
 }
 
-let objetoAgregar = {title: "Sierra Circular", price: 123.45, thumbnail: "https://unarchivo.jpg"};
+let objetoAgregar1 = {title: "Sierra Circular", price: 123.45, thumbnail: "https://unarchivo.jpg"};
 let objetoAgregar2 = {title: "Amoladora", price: 45, thumbnail: "https://unarchivo2.jpg"};
 let objetoAgregar3 = {title: "Nivel", price: 1233, thumbnail: "https://unarchivo3.jpg"};
 let objetoAgregar4 = {title: "Nivel Laser", price: 2123, thumbnail: "https://unarchivo3.jpg"};
@@ -130,7 +130,7 @@ const productosContenedor = new Contenedor("./productos.txt");
 function test() {
     productosContenedor.getAll()
     // .then((array) => console.log(array))
-    .then(() => productosContenedor.save(objetoAgregar))
+    .then(() => productosContenedor.save(objetoAgregar1))
     .then(() => productosContenedor.save(objetoAgregar2))
     .then(() => productosContenedor.save(objetoAgregar3))
     .then(() => productosContenedor.save(objetoAgregar4))
@@ -142,8 +142,8 @@ function test() {
         console.log(array)
         console.log(productosContenedor.getById(5));
     })
-    //.then(() => productosContenedor.deleteById(1))
-    //.then(productosContenedor.deleteAll())
+    // .then(() => productosContenedor.deleteById(1))
+    // .then(productosContenedor.deleteAll())
 }
 
 test();

@@ -34,7 +34,7 @@ class Contenedor {
           this.nombreArchivo,
           JSON.stringify(this.arrayObj)
         );
-        console.log("se guardo" + object.id);
+        console.log("Se guardó " + object.id);
         this.nextId++;
         return Promise.resolve(object.id);
       } else {

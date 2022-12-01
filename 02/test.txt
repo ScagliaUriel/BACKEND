@@ -1,1 +1,0 @@
-[{"title":"Escuadra","price":123.45,"thumbnail":"https://unarchivo.jpg","id":0},{"title":"Lapiz","price":45,"thumbnail":"https://unarchivo2.jpg","id":1},{"title":"Goma","price":123,"thumbnail":"https://unarchivo3.jpg","id":2}]

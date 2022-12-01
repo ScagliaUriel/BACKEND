@@ -28,7 +28,7 @@ class Contenedor {
           this.nombreArchivo,
           JSON.stringify(this.arrayObj)
         );
-        console.log("se guardo" + object.id);
+        console.log("Se guardó " + object.id);
         return Promise.resolve(object.id);
       } else {
         console.log("El objeto ya existe");
