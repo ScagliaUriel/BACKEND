@@ -40,7 +40,7 @@ db.productos.countDocuments({})
 
 //5a
 db.productos.insertOne({title: "Producto 11", price: 3500, thumbnail:"http:/thumb.com/thumb11.jpg"})
-//5b1 Entendi que solo hay que traer el nombre del producto segun las proximas condiciones, en el caso que no sea asi, se saca el {title: true}
+//5b1
 db.productos.find({price: {$lt: 1000}})
 //5b2
 db.productos.find({price: {$gt: 1000, $lt: 3000}})
