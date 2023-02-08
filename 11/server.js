@@ -61,17 +61,10 @@ app.set("view engine", "ejs");
 const productosContenedor = new SqlContainer(optionsSql, "products");
 const mensajesContenedor = new Contenedor("mensajes.txt");
 
-//GET
-app.get("/productos", async (req, res) => {
-  try {
-    const productos = await productosContenedor.getAll();
-    res.render("index", {
-      pageTitle: "Desafio 06 - Ejs",
-      productos: productos,
-    });
-  } catch (error) {
-    console.log(error);
-  }
+///GET
+
+app.get("/", (req, res) => {
+  res.redirect("/productos-test")
 });
 
 //GET PRODUCTOS-TEST (FAKER)
@@ -113,7 +106,7 @@ app.get("/loginError", (req, res) => {
     pageTitle: "Desafio 09 - Faker/Normalizacion",
     partial: "./partials/messageWindow",
     title: "Error",
-    message: "We have in error in the Login, try again",
+    message: "We have an error to login, please, try again",
   });
 });
 
