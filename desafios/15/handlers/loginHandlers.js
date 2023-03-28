@@ -1,7 +1,7 @@
 // ----------- ROOT
 
 export function root(req, res) {
-  res.redirect("backend-production-5b26.up.railway.app")
+  res.redirect("/login")
 };
 
 // ----------- LOGIN
