@@ -30,7 +30,7 @@ export async function postPedido(req, res) {
     const waMessage = {
         body: 'Su pedido ha sido recibido y se encuentra en proceso',
         from: "whatsapp:"+process.env.TWILIO_REG_PHONE_WHATSAPP,
-        to: 'whatsapp:+543412733529'
+        to: 'whatsapp:+5493412733529'
     }
 
     await sendOrder(waMessage);
@@ -39,7 +39,7 @@ export async function postPedido(req, res) {
     const smsMessage = {
         body: 'Su pedido ha sido recibido y se encuentra en proceso',
         from: process.env.TWILIO_REG_PHONE_SMS,
-        to: '+543412733529'
+        to: '+5493412733529'
     }
     
     await sendOrder(smsMessage);
