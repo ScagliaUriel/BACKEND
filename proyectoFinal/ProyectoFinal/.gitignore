@@ -12,4 +12,4 @@ node_modules/
 /src/config.js
 
 # Ignore the uploads folder
-# /public/uploads
+/public/uploads
