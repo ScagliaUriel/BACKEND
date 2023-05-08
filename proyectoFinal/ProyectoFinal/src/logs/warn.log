@@ -1,0 +1,7 @@
+[05-05-2023 03:58:58] [31merror[39m: [31mGET /login 404[39m
+[05-05-2023 03:58:59] [31merror[39m: [31mGET /favicon.ico 404[39m
+[05-05-2023 03:59:14] [31merror[39m: [31mPOST /auth/register 400[39m
+[05-05-2023 03:59:17] [33mwarn[39m: [33mPOST /auth/register 500[39m
+[05-05-2023 03:59:23] [33mwarn[39m: [33mPOST /auth/register 500[39m
+[05-05-2023 03:59:27] [31merror[39m: [31mGET /assets/js/bootstrap.min.js.map 404[39m
+[05-05-2023 03:59:27] [31merror[39m: [31mGET /assets/css/bootstrap.min.css.map 404[39m
